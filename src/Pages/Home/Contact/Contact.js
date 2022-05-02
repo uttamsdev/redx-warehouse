@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import image from '../../../images/warehouse.jpg';
 
 const Contact = () => {
   const map =
@@ -10,8 +11,7 @@ const Contact = () => {
         <h5>HOW TO FIND US</h5>
         <h1>Contacts</h1>
         <div className="contact-area">
-          <div className="hr">
-          </div>
+          <div className="hr"></div>
           <div className="map">
             <iframe src={map}></iframe>
           </div>
@@ -29,6 +29,28 @@ const Contact = () => {
             <p>instagram.com/redrockxcm</p>
           </div>
         </div>
+      </div>
+      <div className="contact-us">
+      <div>
+        <h5>ANY QUESTIONS OR SUGGESTIONS?</h5>
+        <h1>Write us</h1>
+        <div className="contact-us-container">
+          <div className="hr"></div>
+          <div className="contact-info">
+              <p>If you have any question you can send us your message by fill up the forms.  We will be very happy to hear from you.</p>
+
+              <form>
+                  <input className="name" type="text"  placeholder="Enter name" required/> <br />
+                  <input className="email" type="email" placeholder="Enter email" required/> <br />
+                  <textarea className="msg" name="" id="" cols="22" rows="4" placeholder="Enter your message"></textarea> <br />
+                  <button>Submit</button>
+              </form>
+          </div>
+          <div className="contact-image">
+              <img src={image} alt="" />
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   );
