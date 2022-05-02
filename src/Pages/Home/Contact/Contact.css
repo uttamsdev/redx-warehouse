@@ -91,13 +91,16 @@ textarea:focus:-moz-placeholder {
   color: transparent;
 }
 .contact-info button{
-    background-color: #e41c23;
+    background-color: #d21f25;
     border: none;
     color: white;
-    padding: 7px 40px;
+    padding: 10px 40px;
     border-radius: 4px;
     font-size: 18px;
     font-weight: 500;
+}
+.contact-info button:hover{
+  background-color: red;
 }
 
 .contact-info p{

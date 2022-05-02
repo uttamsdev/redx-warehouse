@@ -19,22 +19,22 @@ const ChooseUs = () => {
                 <div className='choose-inner-container'>
                     <div className='choose-div'>
                         <img src={logo1} alt="" />
-                        <h5>TRUSTED BY THOUSANDS</h5>
+                        <h6>TRUSTED BY THOUSANDS</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
                     </div>
                     <div className='choose-div'>
                         <img src={logo2} alt="" />
-                        <h5>BUYING GUIDE</h5>
+                        <h6>BUYING GUIDE</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
                     </div>
                     <div className='choose-div'>
                         <img src={logo3} alt="" />
-                        <h5>TGREAT SERVICE</h5>
+                        <h6>TGREAT SERVICE</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
                     </div>
                     <div className='choose-div'>
                         <img src={logo4} alt="" />
-                        <h5>24/7 SUPPORT</h5>
+                        <h6>24/7 SUPPORT</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
                     </div>
                 </div>
