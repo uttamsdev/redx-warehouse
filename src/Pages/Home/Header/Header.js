@@ -4,7 +4,7 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark" sticky="top">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
     <Container>
     <Navbar.Brand href="#home">RedX Warehouse</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

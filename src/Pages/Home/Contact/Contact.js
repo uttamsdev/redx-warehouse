@@ -1,6 +1,8 @@
 import React from "react";
 import "./Contact.css";
 import image from '../../../images/warehouse.jpg';
+import {HiArrowRight,HiPhoneIncoming,HiOutlineMailOpen,HiOutlineLocationMarker} from 'react-icons/hi';
+import {FaFacebook,FaTwitter,FaInstagram} from 'react-icons/fa';
 
 const Contact = () => {
   const map =
@@ -16,17 +18,24 @@ const Contact = () => {
             <iframe src={map}></iframe>
           </div>
           <div>
-            <p>
+            <p> 
+                <HiOutlineLocationMarker className="icons"></HiOutlineLocationMarker>
               Race Event BeFaster, UK, <br></br>2292 Peachtree Rd NW
             </p>
-            <p>hello@redrockepic.com</p>
             <p>
-              +1 800 787 7012 <br />
-              +1 800 785 7023
+                <HiOutlineMailOpen className="icons"></HiOutlineMailOpen>
+                hello@redrockepic.com</p>
+            <p>
+              <span><HiPhoneIncoming className="icons"></HiPhoneIncoming>+1 800 787 7012 </span><br />
+              <span><HiPhoneIncoming className="icons"></HiPhoneIncoming>+1 800 787 6085 </span>
             </p>
-            <p>facebook.com/redrockxcm</p>
-            <p>twitter.com/redrockepic</p>
-            <p>instagram.com/redrockxcm</p>
+            <p>
+            <FaFacebook className="icons"></FaFacebook>
+                facebook.com/redrockxcm <br />
+            <FaTwitter className="icons"></FaTwitter>twitter.com/redrockepic <br />
+           <FaInstagram className="icons"></FaInstagram> instagram.com/redrockxcm 
+            </p>
+                
           </div>
         </div>
       </div>
@@ -43,7 +52,7 @@ const Contact = () => {
                   <input className="name" type="text"  placeholder="Enter name" required/> <br />
                   <input className="email" type="email" placeholder="Enter email" required/> <br />
                   <textarea className="msg" name="" id="" cols="22" rows="4" placeholder="Enter your message"></textarea> <br />
-                  <button>Submit</button>
+                  <button>Submit <HiArrowRight></HiArrowRight></button>
               </form>
           </div>
           <div className="contact-image">
