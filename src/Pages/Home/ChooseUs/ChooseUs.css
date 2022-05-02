@@ -1,0 +1,35 @@
+.img img{
+    width: 708px;
+    height: 723px;
+}
+.choose-div{
+    width: 360px;
+}
+.choose-container{
+    display: flex;
+    height: 723px;
+    font-size: 18px;
+    margin-top: 100px;
+}
+.choose-inner-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.choose-content{
+    background-color: #e4e4e4;
+    padding-left: 30px;
+    color: #3e3e3e;
+}
+.choose-inner-container img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.choose-container h5{
+    text-align: center;
+}
+.choose-content h3{
+    margin-top: 50px;
+}
+
