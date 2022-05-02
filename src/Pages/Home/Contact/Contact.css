@@ -1,0 +1,22 @@
+.map iframe{
+    width: 500px;
+    height: 320px;
+}
+.hr{
+    width: 125px;
+    height: 3px;
+    background-color: black;
+}
+
+.contact-container h1{
+    color: #d61e25;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contact-area{
+    display: flex;
+    gap: 50px;
+}

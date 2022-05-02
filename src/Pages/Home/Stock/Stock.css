@@ -1,5 +1,5 @@
 .stock{
-    height: 350px;
+    height: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,4 +17,9 @@
 }
 .stock-div h4{
     color: #e79301;
+}
+.stock-div p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #414141;
 }
