@@ -14,6 +14,7 @@
   height: 46px;
   color: white;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 .github-signin {
   background-color: black;
@@ -21,6 +22,7 @@
   border-radius: 4px;
   height: 46px;
   color: white;
+  font-size: 18px;
 }
 .social-icon {
   font-size: 22px;
