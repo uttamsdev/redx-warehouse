@@ -1,5 +1,5 @@
 .login-container{
-    margin-top: 88px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +18,8 @@
 }
 label{
     margin-bottom: 5px;
+    font-size: 18px;
+
 }
 .a{
     text-decoration: none;

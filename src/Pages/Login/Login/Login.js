@@ -9,7 +9,7 @@ const Login = () => {
         <div className='login-area'>
                 <h4>LOGIN TO REDX</h4>
                     <form className='login-items'>
-                    <label htmlFor="username">Username</label>
+                    <label htmlFor="username">Email</label>
                     <input type="email" className='login' name="username" placeholder='your-email@gmail.com' required/>
                     <label htmlFor="password">Password</label>
                     <input type="password" className='login' name="password" placeholder="Your Password" required/>
