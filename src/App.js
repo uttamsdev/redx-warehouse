@@ -4,7 +4,7 @@ import Header from "./Pages/Home/Header/Header";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login/Login";
 import Register from "./Pages/Login/Register/Register";
-import NotFound from "./Pages/NotFound/NotFound";
+import NotFound from "./Pages/Shared/NotFound/NotFound";
 
 function App() {
   return (
