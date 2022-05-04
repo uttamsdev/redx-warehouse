@@ -14,7 +14,7 @@ const useProducts = (allProducts) => {
                 setProducts(data.slice(0,6));
             }
         })
-    },[])
+    },[products,allProducts])
     return [products, setProducts];
 }
 export default useProducts;
