@@ -13,9 +13,9 @@ const Banner = () => {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <img height={810}
+        <img
           className="d-block w-100"
-          src={slider1}
+          src={slider3}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -24,7 +24,7 @@ const Banner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img height={810}
+        <img
           className="d-block w-100"
           src={slider2}
           alt="Second slide"
@@ -36,9 +36,9 @@ const Banner = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img height={810}
+        <img
           className="d-block w-100"
-          src={slider3}
+          src={slider1}
           alt="Third slide"
         />
 

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./Pages/Home/Footer/Footer";
 import Header from "./Pages/Home/Header/Header";
 import Home from "./Pages/Home/Home/Home";
 import Inventory from "./Pages/Inventory/Inventory";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/manageInventories" element={<ManageInventories></ManageInventories>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

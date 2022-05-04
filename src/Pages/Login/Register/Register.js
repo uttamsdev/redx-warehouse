@@ -2,7 +2,8 @@ import { async } from '@firebase/util';
 import React from 'react'
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
-import { toast, ToastContainer, useToast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
@@ -29,8 +30,8 @@ const Register = () => {
     const password = event.target.password.value;
     await createUserWithEmailAndPassword(email,password);
     await updateProfile({ displayName: name});
-          toast('Registration Successful Please verify your email.')
           navigate('/');
+          toast('Registration Successful Please verify your email.');
   }
   return (
     <div className='login-container'>
