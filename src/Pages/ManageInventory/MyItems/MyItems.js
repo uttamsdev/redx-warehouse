@@ -17,9 +17,9 @@ const MyItems = () => {
       <th>Image</th>
       <th>Name</th>
       <th>Price</th>
-      <th>Quantity</th>
-      <th>Supplier Name</th>
-      <th>Description</th>
+      <th className='responsive'>Quantity</th>
+      <th className='responsive'>Supplier Name</th>
+      <th className='responsive'>Description</th>
       <th>Action</th>
     </tr>
   </thead>

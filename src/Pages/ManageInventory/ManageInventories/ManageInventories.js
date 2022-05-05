@@ -12,9 +12,9 @@ const ManageInventories = () => {
     }
   return (
    <div>
-       <div className='d-flex flex-column w-25  mx-auto mt-4'>
-           <h4>ADD YOUR INVENTORY ITEMS: </h4>
-           <button onClick={handleNavigate} className='btn btn-danger'>Add New Item</button>
+       <div className='text-center mt-4'>
+           <h4 className='mb-3'>ADD YOUR INVENTORY ITEMS: </h4>
+           <button onClick={handleNavigate} className='btn btn-danger d-block mx-auto'>Add New Item</button>
        </div>
        <h3 className='text-center mt-5'>All Inventories Items</h3>
         <div className='products-container'>

@@ -2,6 +2,7 @@ import React from 'react';
 import {AiOutlineDelete} from 'react-icons/ai';
 import swal from 'sweetalert';
 import useItems from '../../Hooks/useItems';
+import './MyItem.css';
 
 const MyItem = ({item}) => {
     const {_id, name, price, quantity, description, img, supplierName} = item;
@@ -37,13 +38,13 @@ const MyItem = ({item}) => {
     }
     
   return (
-    <tr>
+    <tr className='wrapper-tr'>
     <td><img width={250} src={img} alt="" /></td>
     <td>{name}</td>
     <td>{price}</td>
-    <td>{quantity}</td>
-    <td>{supplierName}</td>
-    <td>{description}</td>
+    <td className='responsive'>{quantity}</td>
+    <td className='responsive'>{supplierName}</td>
+    <td className='responsive'>{description}</td>
     <td><button onClick={()=> handleDelete(_id)} className='btn btn-danger delete-btn'>Delete Item <AiOutlineDelete/></button></td>
   </tr>
   )
