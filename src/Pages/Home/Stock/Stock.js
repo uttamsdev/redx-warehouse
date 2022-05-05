@@ -7,7 +7,7 @@ import img4 from '../../../images/stock/drop-icon.png';
 
 const Stock = () => {
   return (
-    <div className='stock-container'>
+    <div className='stock-container container'>
         <div className='stock'>
             <div className='stock-div'>
                 <img src={img1} alt="" />

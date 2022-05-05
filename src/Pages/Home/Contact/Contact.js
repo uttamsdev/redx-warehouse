@@ -1,8 +1,10 @@
 import React from "react";
 import "./Contact.css";
 import image from '../../../images/warehouse.jpg';
-import {HiArrowRight,HiPhoneIncoming,HiOutlineMailOpen,HiOutlineLocationMarker} from 'react-icons/hi';
-import {FaFacebook,FaTwitter,FaInstagram} from 'react-icons/fa';
+import {HiArrowRight,HiOutlineMailOpen,HiOutlineLocationMarker} from 'react-icons/hi';
+import {FaInstagram} from 'react-icons/fa';
+import {MdOutlinePhone} from 'react-icons/md';
+import {FiTwitter,FiFacebook} from 'react-icons/fi';
 
 const Contact = () => {
   const map =
@@ -26,13 +28,13 @@ const Contact = () => {
                 <HiOutlineMailOpen className="icons"></HiOutlineMailOpen>
                 hello@redrockepic.com</p>
             <p>
-              <span><HiPhoneIncoming className="icons"></HiPhoneIncoming>+1 800 787 7012 </span><br />
-              <span><HiPhoneIncoming className="icons"></HiPhoneIncoming>+1 800 787 6085 </span>
+              <span><MdOutlinePhone className="icons"></MdOutlinePhone>+1 800 787 7012 </span><br />
+              <span><MdOutlinePhone className="icons"></MdOutlinePhone>+1 800 787 6085 </span>
             </p>
             <p>
-            <FaFacebook className="icons"></FaFacebook>
+            <FiFacebook className="icons"></FiFacebook>
                 facebook.com/redrockxcm <br />
-            <FaTwitter className="icons"></FaTwitter>twitter.com/redrockepic <br />
+            <FiTwitter className="icons"></FiTwitter>twitter.com/redrockepic <br />
            <FaInstagram className="icons"></FaInstagram> instagram.com/redrockxcm 
             </p>
                 

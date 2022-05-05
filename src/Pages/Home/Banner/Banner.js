@@ -19,8 +19,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3'>Welcome to RedX Warehouse</h3> <br />
+          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3'>This is an inventory management system</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -31,8 +31,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3'>Welcome to RedX Warehouse</h3> <br />
+          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3'>Keeps track of products to make life easier.</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,10 +43,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+        <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3'>Welcome to RedX Warehouse</h3> <br />
+          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3'>Thank for visiting our website. Have a good day.</span>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -1,5 +1,5 @@
 .img img{
-    width: 708px;
+    /* width: 708px; */
     height: 723px;
 }
 .choose-div{
@@ -9,7 +9,8 @@
     display: flex;
     height: 723px;
     font-size: 18px;
-    margin-top: 70px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 .choose-inner-container{
     display: grid;
@@ -17,9 +18,11 @@
     grid-gap: 30px;
 }
 .choose-content{
-    background-color: #e4e4e4;
-    padding-left: 40px;
-    color: #3e3e3e;
+    background-color: #e5e5e596;
+    padding: 0px 45px;
+    color: #424040;
+    border-radius: 10px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .choose-inner-container img{
     display: block;

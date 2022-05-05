@@ -1,12 +1,25 @@
 .div-container{
     display: flex;
-    gap: 80px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    gap: 50px;
+    margin-top: 110px;
+    margin-bottom: 70px;
 }
 /* .div-container img{
     width: 700px;
 } */
-.about{
-    margin-left: 200px;
+
+.about-image{
+    width: 720px;
+}
+.title{
+    color: #3741fe;
+    font-size: 48px;
+}
+.title1{
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+.about-info{
+    font-size: 21px;
+    text-align: justify;
 }

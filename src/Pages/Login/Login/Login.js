@@ -66,7 +66,7 @@ const Login = () => {
                     <input type="submit" className='login-btn' value="Login" />
                     </form>
                     <p className='p'>New to RedX? <Link className='a' to="/register">Create an Account</Link></p>
-                    <p className='p'>Forgot password? <button onClick={resetPassword} className='btn btn-link a'>Rest Password</button></p>
+                    <p className='p'>Forgot password? <button onClick={resetPassword} className='btn btn-link a'>Reset Password</button></p>
                     <SocialLogin></SocialLogin>
                     
         </div>

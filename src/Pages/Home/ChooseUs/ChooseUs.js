@@ -1,6 +1,6 @@
 import React from 'react';
 import './ChooseUs.css';
-import image from '../../../images/why-me-bg.png';
+import image from '../../../images/warehouse/choose/girl3.png';
 import logo1 from '../../../images/choose/1.png';
 import logo2 from '../../../images/choose/2.png';
 import logo3 from '../../../images/choose/3.png';
@@ -8,7 +8,7 @@ import logo4 from '../../../images/choose/4.png';
 
 const ChooseUs = () => {
   return (
-    <div>
+    <div className='container'>
         <div className='choose-container'>
             <div className='img'>
                 <img src={image} alt="" />

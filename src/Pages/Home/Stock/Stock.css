@@ -1,3 +1,6 @@
+.stock-container{
+    border-radius: 10px;
+}
 .stock{
     height: 330px;
     display: flex;
@@ -5,6 +8,7 @@
     align-items: center;
     gap: 120px;
     background-color: #F2F2F2;
+    border-radius: 12px;
 }
 .stock-div{
     /* width: 150px; */
