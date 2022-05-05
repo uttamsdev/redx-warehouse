@@ -1,5 +1,7 @@
 .stock-container{
     border-radius: 10px;
+    background-color: #F2F2F2;
+    /* min-height: 100vh; */
 }
 .stock{
     height: 330px;
@@ -7,11 +9,10 @@
     justify-content: center;
     align-items: center;
     gap: 120px;
-    background-color: #F2F2F2;
     border-radius: 12px;
 }
 .stock-div{
-    /* width: 150px; */
+    /* width: 200px; */
     text-align: center;
 }
 .stock-div img{
@@ -26,4 +27,15 @@
     font-weight: 500;
     font-size: 18px;
     color: #414141;
+}
+
+@media (max-width:688px) {
+   .stock{
+       flex-direction: column;
+       height: auto;
+       gap: 55px;
+   }
+   .stock-container{
+       padding: 40px 0px;
+   }
 }

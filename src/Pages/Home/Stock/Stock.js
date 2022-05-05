@@ -27,7 +27,7 @@ const Stock = () => {
             <div className='stock-div'>
                 <img src={img4} alt="" />
                 <h4>4,200</h4>
-                <p>OIL CHANGES</p>
+                <p>Stores</p>
             </div>
             
         </div>

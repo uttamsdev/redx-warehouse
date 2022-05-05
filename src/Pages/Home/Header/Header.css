@@ -1,11 +1,14 @@
 .signOut-btn{
     border: none;
-    background-color: orangered;
+    background-color: red;
     color: white;
     padding: 0px 20px;
     font-size: 18px;
     border-radius: 50px;
     font-weight: 500;
+}
+.signOut-btn:hover{
+    background-color: rgbn;
 }
 .header{
     height: 84px;

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import slider1 from '../../../images/slider1.png';
 import slider2 from '../../../images/slider2.png';
 import slider3 from '../../../images/slider3.png';
+import './Banner.css';
 
 const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -19,8 +20,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3'>Welcome to RedX Warehouse</h3> <br />
-          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3'>This is an inventory management system</span>
+          <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3 display-none'>Welcome to RedX Warehouse</h3> <br />
+          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3 display-none'>This is an inventory management system</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -31,8 +32,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-        <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3'>Welcome to RedX Warehouse</h3> <br />
-          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3'>Keeps track of products to make life easier.</span>
+        <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3 display-none'>Welcome to RedX Warehouse</h3> <br />
+          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3 display-none'>Keeps track of products to make life easier.</span>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -43,8 +44,8 @@ const Banner = () => {
         />
 
         <Carousel.Caption>
-        <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3'>Welcome to RedX Warehouse</h3> <br />
-          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3'>Thank for visiting our website. Have a good day.</span>
+        <h3 className='text-black bg-white d-inline-block fs-4 fw-bold p-1 rounded-3 display-none'>Welcome to RedX Warehouse</h3> <br />
+          <span className='text-black bg-white d-inline-block mt-2 p-1 rounded-3 display-none'>Thank for visiting our website. Have a good day.</span>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

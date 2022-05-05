@@ -14,28 +14,28 @@ const ChooseUs = () => {
                 <img src={image} alt="" />
             </div>
             <div className='choose-content'>
-                <h3>WHY YOU SHOULD CHOOSE US?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam voluptas, possimus labore neque quaerat hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minima!</p>
+                <h3 className='heading'>WHY YOU SHOULD CHOOSE US?</h3>
+                <p className='subheading'>We are proud to provide our clients with support to solve your problems and to ensure the continuous networking of your business.</p>
                 <div className='choose-inner-container'>
                     <div className='choose-div'>
                         <img src={logo1} alt="" />
                         <h6>TRUSTED BY THOUSANDS</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
+                        <p>We are trusted by clients. Our company slogan says it all, we will strive and are committed to provide a the maximum level of stability to our clients.</p>
                     </div>
                     <div className='choose-div'>
                         <img src={logo2} alt="" />
                         <h6>BUYING GUIDE</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
+                        <p>These landing pages expose peoples struggles, show how your product helps, and acts as a 24/7 sales team that creates new business opportunities for you. </p>
                     </div>
                     <div className='choose-div'>
                         <img src={logo3} alt="" />
                         <h6>TGREAT SERVICE</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
+                        <p>Major retailers like REI and Best Buy have been using buyers guides for years. While smaller brands tend to ignore them, this piece of content can work wonders.</p>
                     </div>
                     <div className='choose-div'>
                         <img src={logo4} alt="" />
                         <h6>24/7 SUPPORT</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorem libero perspiciatis, dolore explicabo ipsum incidunt quasi. Maiores, ipsa molestiae.</p>
+                        <p>At the start of the pandemic, we shifted our 24/7 Helpline operations to be remote. We enabled our enthusiastic volunteers to take calls and texts from their own homes</p>
                     </div>
                 </div>
             </div>

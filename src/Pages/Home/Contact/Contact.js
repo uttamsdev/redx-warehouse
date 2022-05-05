@@ -43,8 +43,8 @@ const Contact = () => {
       </div>
       <div className="contact-us">
       <div>
-        <h5>ANY QUESTIONS OR SUGGESTIONS?</h5>
-        <h1>Write us</h1>
+        <h5 className="contact-title">ANY QUESTIONS OR SUGGESTIONS?</h5>
+        <h1 className="contact-subtitle">Write us</h1>
         <div className="contact-us-container">
           <div className="hr"></div>
           <div className="contact-info">

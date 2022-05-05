@@ -1,5 +1,4 @@
 .img img{
-    /* width: 708px; */
     height: 723px;
 }
 .choose-div{
@@ -41,3 +40,31 @@
     width: 70px;
 }
 
+@media (max-width:688px) {
+    .choose-container{
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .img img{
+        height: 450px;
+        width: 100%;
+    }
+    .choose-container{
+        height: auto;
+    }
+    .choose-inner-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .choose-content{
+        padding: 0px;
+    }
+    .choose-div{
+        padding: 0px 20px;
+    }
+    .heading,
+    .subheading{
+        padding: 0px 20px;
+    }
+}
