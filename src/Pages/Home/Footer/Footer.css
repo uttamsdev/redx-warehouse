@@ -94,3 +94,11 @@
 .inner-footer p{
     margin: 0;
 }
+
+@media (max-width:688px) {
+    .footer{
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
+}
