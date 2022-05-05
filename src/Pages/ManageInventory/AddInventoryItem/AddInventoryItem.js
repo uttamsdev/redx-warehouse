@@ -33,12 +33,12 @@ const AddInventoryItem = () => {
     <form className='add-item' onSubmit={handleSubmit(onSubmit)}>
     <label className='text-danger fw-bolder fs-5 mb-2' htmlFor="add-item">Add Your Item:</label>
     <input className="form-control mb-2" type="text" {...register("email")} value={user.email}/>
-    <input className="form-control mb-2" type="text" {...register("name")} placeholder='Product Name'/>
-    <input className="form-control mb-2" type="number" {...register("price")}  placeholder='Enter Price'/>
-    <input className="form-control mb-2" type="number" {...register("quantity")} placeholder='Quantity'/>
-    <input className="form-control mb-2" type="text" {...register("supplierName")} placeholder='Supplier Name'/>
-    <input className="form-control mb-2" type="text" {...register("img")} placeholder='Image URL'/>
-    <textarea className="form-control" {...register("description")} cols="30" rows="5" placeholder='Write Product Description'></textarea>
+    <input className="form-control mb-2" type="text" {...register("name")} placeholder='Product Name' required/>
+    <input className="form-control mb-2" type="number" {...register("price")}  placeholder='Enter Price' required/>
+    <input className="form-control mb-2" type="number" {...register("quantity")} placeholder='Quantity' required/>
+    <input className="form-control mb-2" type="text" {...register("supplierName")} placeholder='Supplier Name' required/>
+    <input className="form-control mb-2" type="text" {...register("img")} placeholder='Image URL' required/>
+    <textarea className="form-control" {...register("description")} cols="30" rows="5" placeholder='Write Product Description' required></textarea>
     <input type="submit" value="Add Item" className='btn btn-danger mt-3' />
   </form>
   )

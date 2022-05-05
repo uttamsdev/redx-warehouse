@@ -1,14 +1,11 @@
 import React from 'react';
-import './SingleInventoryItem.css';
 import {AiOutlineDelete} from 'react-icons/ai';
-import useProducts from '../../Hooks/useProducts';
 import swal from 'sweetalert';
+import useItems from '../../Hooks/useItems';
 
-
-const SingleInventoryItem = ({product}) => {
-    const {_id,name, img, description, quantity, supplierName, price} = product;
-    const [products, setProducts] = useProducts(true);
-
+const MyItem = ({item}) => {
+    const {_id, name, price, quantity, description, img, supplierName} = item;
+    const [items, setItems] = useItems();
     const handleDelete = (id) => {
       //sweet alert
         swal({
@@ -30,29 +27,26 @@ const SingleInventoryItem = ({product}) => {
               .then((res) => res.json())
               .then((data) => {
                 console.log(data);
-                const remaining = products.filter(product => product._id !== id);
-                setProducts(remaining);
+                const remaining = items.filter((item) => item._id !== id);
+                setItems(remaining);
               });
           } else {
             swal("Item not deleted. You cancelled.");
           }
         });
     }
+    
   return (
-    <div className='outer-product'>
-    <div className='product'>
-    <img width={360} height={313} src={img} alt="" />
-    <div className='product-info'>
-    <h6>{name}</h6>
-    <small><b>Price:</b> {price}৳</small> <br />
-    <small>{description.slice(0,140)}</small>
-    <p><b>Quantity:</b> {quantity}</p>
-    <p><b>Supplier:</b> {supplierName}</p>
-    </div>
-    <button onClick={()=> handleDelete(_id)} className='stock-btn'>Delete This Item <AiOutlineDelete/></button>
-</div>
-</div>
+    <tr>
+    <td><img width={250} src={img} alt="" /></td>
+    <td>{name}</td>
+    <td>{price}</td>
+    <td>{quantity}</td>
+    <td>{supplierName}</td>
+    <td>{description}</td>
+    <td><button onClick={()=> handleDelete(_id)} className='btn btn-danger'>Delete This Item <AiOutlineDelete/></button></td>
+  </tr>
   )
 }
 
-export default SingleInventoryItem;
+export default MyItem;

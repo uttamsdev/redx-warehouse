@@ -14,7 +14,7 @@ const Inventory = () => {
   return (
     <div className='product-information'>
         <img src={product.img} alt="" />
-        <p><b>Product ID: </b> {product._id}৳</p>
+        <p><b>Product ID: </b> {product._id}</p>
         <h5><b>Product Name:</b> {product.name}</h5>
         <p><b>Price: </b> {product.price}৳</p>
         <small>{product.description}</small>
