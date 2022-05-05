@@ -44,7 +44,7 @@ const MyItem = ({item}) => {
     <td>{quantity}</td>
     <td>{supplierName}</td>
     <td>{description}</td>
-    <td><button onClick={()=> handleDelete(_id)} className='btn btn-danger'>Delete This Item <AiOutlineDelete/></button></td>
+    <td><button onClick={()=> handleDelete(_id)} className='btn btn-danger delete-btn'>Delete Item <AiOutlineDelete/></button></td>
   </tr>
   )
 }

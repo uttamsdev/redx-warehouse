@@ -34,7 +34,8 @@ const Register = () => {
           toast('Registration Successful Please verify your email.');
   }
   return (
-    <div className='login-container'>
+  <div className='login-outer-container'>
+  <div className='login-container'>
     <div className='login-area'>
             <h4>REGISTER TO REDX</h4>
                 <form onSubmit={handleRegister} className='login-items'>
@@ -52,6 +53,7 @@ const Register = () => {
     </div>
     <ToastContainer/>
 </div>
+  </div>
   )
 }
 

@@ -1,8 +1,12 @@
+.login-outer-container{
+    min-height: 100vh;
+}
 .login-container{
     margin-top: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* min-height: 100vh; */
 }
 .login-area{
     width: 500px;

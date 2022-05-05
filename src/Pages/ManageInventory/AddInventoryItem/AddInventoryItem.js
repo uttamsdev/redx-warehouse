@@ -30,7 +30,8 @@ const AddInventoryItem = () => {
       
   };
   return (
-    <form className='add-item' onSubmit={handleSubmit(onSubmit)}>
+    <div className='form-container'>
+      <form className='add-item' onSubmit={handleSubmit(onSubmit)}>
     <label className='text-danger fw-bolder fs-5 mb-2' htmlFor="add-item">Add Your Item:</label>
     <input className="form-control mb-2" type="text" {...register("email")} value={user.email}/>
     <input className="form-control mb-2" type="text" {...register("name")} placeholder='Product Name' required/>
@@ -41,6 +42,7 @@ const AddInventoryItem = () => {
     <textarea className="form-control" {...register("description")} cols="30" rows="5" placeholder='Write Product Description' required></textarea>
     <input type="submit" value="Add Item" className='btn btn-danger mt-3' />
   </form>
+    </div>
   )
 }
 

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Blogs from "./Pages/Blogs/Blogs";
 import Footer from "./Pages/Home/Footer/Footer";
 import Header from "./Pages/Home/Header/Header";
 import Home from "./Pages/Home/Home/Home";
@@ -31,6 +32,7 @@ function App() {
           <MyItems></MyItems>
         </RequireAuth>}></Route>
         <Route path="/manageInventories" element={<ManageInventories></ManageInventories>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

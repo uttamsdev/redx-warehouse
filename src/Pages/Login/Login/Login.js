@@ -53,7 +53,7 @@ const Login = () => {
     }
   };
   return (
-    <div>
+    <div className='login-outer-container'>
         <div className='login-container'>
         <div className='login-area'>
                 <h4>LOGIN TO REDX</h4>
