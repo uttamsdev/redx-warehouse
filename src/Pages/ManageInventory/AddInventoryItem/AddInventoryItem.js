@@ -3,10 +3,13 @@ import './AddInventoryItem.css';
 import { useForm } from "react-hook-form";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import swal from 'sweetalert';
+
 
 const AddInventoryItem = () => {
     const [user] = useAuthState(auth);
-    const { register, handleSubmit } = useForm();
+    // const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset} = useForm();
   const onSubmit = data => {
     fetch('http://localhost:5000/products', {
         method: 'POST',
@@ -22,8 +25,9 @@ const AddInventoryItem = () => {
       .catch((error) => {
         console.error('Error:', error);
       });
-
-      console.log(data);
+      reset();
+      swal("Item Inserted Successfully!", "Item Successfully Added to Database!", "success");
+      
   };
   return (
     <form className='add-item' onSubmit={handleSubmit(onSubmit)}>
