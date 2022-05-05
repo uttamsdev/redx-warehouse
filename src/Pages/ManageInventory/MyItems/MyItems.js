@@ -4,11 +4,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import useItems from '../../Hooks/useItems';
 import MyItem from '../MyItem/MyItem';
+import './MyItems.css'
 
 const MyItems = () => {
     const [items, setItems] = useItems();
   return (
-    <div>
+    <div className='my-items'>
         <h3 className='text-center mt-4 mb-3'>My Items</h3>
 <Table striped bordered hover>
   <thead>
