@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# RedX Warehouse
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Short Description:
+This is a full stack project about Inventory Management system. User can perform read, update, insert and delete operation with mongoDB database. This project is built in react js but basically implementation of React router, firebase, Node , Express and MongoDB CRUD operation. 
 
-## Available Scripts
+## Features of this website:
+* This is a inventory management website. Here user can create an account, verify account, reset password and login using registered email and password or user can login with google and github directly.
 
-In the project directory, you can run:
+* Home page contain 6 inventory items and mange inventory route contain all items. All the items are read from database. User can delete the items.
+* User can add new item that will be added in the database and will be displayed on the website on real time.
+* User can see the items they added in My items route in a tabular form. Here if user want he/she can delete the item.
 
-### `npm start`
+* User can update the item's information while clicking on the update stock button. There is two buttons. If user clicked on delivered the quantity of the item will be decreased by one and also there is a small form to add quantity. User can add quantity of the item that will be updated on database as well.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* To ensure security JWT token used. Only authorize user can access their property.
+## Technologies are used in this project:
+* HTML5
+* CSS3
+* Bootstrap
+* React Bootstrap
+* JavaScript
+* React JS
+* React Router V6
+* Firebase
+* JWT Token
+* Toastify
+* Sweet Alert
+* AOS (Animation on Scroll)
+* React Firebase Hooks
+* React Hook Form
+* MongoDB (Database)
+* NodeJS
+* Express JS
