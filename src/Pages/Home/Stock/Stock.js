@@ -7,27 +7,27 @@ import img4 from '../../../images/stock/drop-icon.png';
 
 const Stock = () => {
   return (
-    <div className='stock-container container'>
+    <div className='stock-container'>
         <div className='stock'>
             <div className='stock-div'>
                 <img src={img1} alt="" />
                 <h4>4,850</h4>
-                <p>VEHICLES IN STOCK</p>
+                <p className='text-white fw-bold'>VEHICLES IN STOCK</p>
             </div>
             <div className='stock-div'>
                 <img src={img2} alt="" />
                 <h4>10,500</h4>
-                <p>HAPPY CUSTOMERS</p>
+                <p className='text-white fw-bold'>HAPPY CUSTOMERS</p>
             </div>
             <div className='stock-div'>
                 <img src={img3} alt="" />
                 <h4>1,600</h4>
-                <p>BRANCHES</p>
+                <p className='text-white fw-bold'>BRANCHES</p>
             </div>
             <div className='stock-div'>
                 <img src={img4} alt="" />
                 <h4>4,200</h4>
-                <p>Stores</p>
+                <p className='text-white fw-bold'>STORES</p>
             </div>
             
         </div>

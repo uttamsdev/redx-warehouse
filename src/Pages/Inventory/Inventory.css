@@ -28,3 +28,17 @@
     display: block;
     margin: 0 auto;
 }
+
+@media (max-width:688px){
+    .product-information{
+        width: 100%;
+        padding: 10px 25px;
+    }
+   .product-information form{
+       width: 100%;
+       padding: 0px 25px;
+   }
+   .product-information img{
+       width: 90%;
+   }
+}
