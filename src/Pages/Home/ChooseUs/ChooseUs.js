@@ -10,10 +10,10 @@ const ChooseUs = () => {
   return (
     <div className='container'>
         <div className='choose-container'>
-            <div className='img'>
+            <div  data-aos="fade-right" className='img'>
                 <img src={image} alt="" />
             </div>
-            <div className='choose-content'>
+            <div  data-aos="zoom-in-right" className='choose-content'>
                 <h3 className='heading'>WHY YOU SHOULD CHOOSE US?</h3>
                 <p className='subheading'>We are proud to provide our clients with support to solve your problems and to ensure the continuous networking of your business.</p>
                 <div className='choose-inner-container'>

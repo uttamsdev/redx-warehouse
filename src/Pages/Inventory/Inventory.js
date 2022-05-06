@@ -16,6 +16,8 @@ const Inventory = () => {
     //handle stock add
     const productQuantity = product.quantity;
     console.log('product quantity:',productQuantity);
+    
+   
 
     //handle update
     const handleUpdate = (event) => {
@@ -46,7 +48,10 @@ const Inventory = () => {
 
      //hande delivered
      const handleDelivered = () => {
-      const quantity = parseInt(productQuantity) - 1;
+      let quantity = 0;
+      if(productQuantity > 0){
+        quantity = parseInt(productQuantity) - 1;
+      }
 
       const updatedProductQuantity = quantity.toString();
       console.log('update restock:',updatedProductQuantity);
@@ -65,7 +70,12 @@ const Inventory = () => {
       .then((data) => {
         console.log(data);
         // setProduct(product);
-        swal("Item Delivered!", "Quantity Successfully Updated!", "success");
+        if(productQuantity > 0){
+          swal("Item Delivered!", "Quantity Successfully Updated!", "success");
+        }
+        else if(productQuantity === '0'){
+          swal("You have No Item to be deleted!", "Please add some item first!", "error");
+        }
       });
     }
   return (
@@ -75,7 +85,8 @@ const Inventory = () => {
         <h5><b>Product Name:</b> {product.name}</h5>
         <p><b>Price: </b> {product.price}৳</p>
         <small>{product.description}</small>
-        <p><b>Quantity: </b>{product.quantity}</p>
+        <p><b>Quantity: </b>{product.quantity==='0' ? <button className='btn btn-danger btn-sm'>Sold Out</button> : product.quantity  
+      }</p>
         <p><b>Supplier name:</b> {product.supplierName}</p>
         <button onClick={handleDelivered} className='delivered-btn'>Delivered</button>
         <button onClick={manageInventories} className='delivered-btn'>Manage Inventories <HiArrowRight/></button>

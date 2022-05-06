@@ -14,7 +14,7 @@ const Contact = () => {
       <div>
         <h5>HOW TO FIND US</h5>
         <h1>Contacts</h1>
-        <div className="contact-area">
+        <div  data-aos="zoom-in-right" className="contact-area">
           <div className="hr"></div>
           <div className="map">
             <iframe src={map}></iframe>
@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="contact-us">
+      <div  data-aos="fade-up" className="contact-us">
       <div>
         <h5 className="contact-title">ANY QUESTIONS OR SUGGESTIONS?</h5>
         <h1 className="contact-subtitle">Write us</h1>

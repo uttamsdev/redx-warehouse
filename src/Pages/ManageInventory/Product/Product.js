@@ -10,7 +10,7 @@ const Product = ({product}) => {
     }
 
   return (
-    <div className='outer-product'>
+    <div data-aos="fade-up" className='outer-product'>
         <div className='product'>
         <img width={360} height={313} src={img} alt="" />
         <div className='product-info'>
