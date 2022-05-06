@@ -8,12 +8,13 @@
     font-weight: 500;
 }
 .signOut-btn:hover{
-    background-color: rgbn;
+    background-color: orangered;
 }
 .header{
-    height: 84px;
-    background-color: rgb(32, 31, 31) !important;
+    height: 90px;
+    background-color: #262728 !important;
 }
+
 @media (max-width:688px) {
     .header{
         height: auto;

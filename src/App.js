@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import React, {useState, useEffect} from 'react';
 import Blogs from "./Pages/Blogs/Blogs";
 import Footer from "./Pages/Home/Footer/Footer";
 import Header from "./Pages/Home/Header/Header";
@@ -12,31 +13,52 @@ import AddInventoryItem from "./Pages/ManageInventory/AddInventoryItem/AddInvent
 import ManageInventories from "./Pages/ManageInventory/ManageInventories/ManageInventories";
 import MyItems from "./Pages/ManageInventory/MyItems/MyItems";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
+import HashLoader from "react-spinners/HashLoader";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+      setLoading(false);
+    },5000)
+  },[])
   return (
     <div>
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/home" element={<Home></Home>}></Route>
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/inventory/:id" element={<RequireAuth>
-          <Inventory></Inventory>
-        </RequireAuth>}></Route>
-        <Route path="/addnewitem" element={<RequireAuth>
-          <AddInventoryItem></AddInventoryItem>
-        </RequireAuth>}></Route>
-        <Route path="/myitems" element={<RequireAuth>
-          <MyItems></MyItems>
-        </RequireAuth>}></Route>
-        <Route path="/manageInventories" element={<ManageInventories></ManageInventories>}></Route>
-        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-        <Route path="*" element={<NotFound></NotFound>}></Route>
-      </Routes>
-      <Footer></Footer>
-    </div>
+      {
+        loading ?
+        <div className="loading">
+          <HashLoader
+          size={120}
+          color={"#FF5F15"}
+          loading={loading}
+          />
+        </div>
+        :
+        <div>
+        <Header></Header>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/home" element={<Home></Home>}></Route>
+          <Route path="/login" element={<Login></Login>}></Route>
+          <Route path="/register" element={<Register></Register>}></Route>
+          <Route path="/inventory/:id" element={<RequireAuth>
+            <Inventory></Inventory>
+          </RequireAuth>}></Route>
+          <Route path="/addnewitem" element={<RequireAuth>
+            <AddInventoryItem></AddInventoryItem>
+          </RequireAuth>}></Route>
+          <Route path="/myitems" element={<RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>}></Route>
+          <Route path="/manageInventories" element={<ManageInventories></ManageInventories>}></Route>
+          <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+          <Route path="*" element={<NotFound></NotFound>}></Route>
+        </Routes>
+        <Footer></Footer>
+      </div>
+      }
+    </div>  
   );
 }
 
