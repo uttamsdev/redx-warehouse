@@ -22,9 +22,9 @@ const Inventory = () => {
       event.preventDefault();
       const restockQuantity = event.target.restock.value;
       const updatedRestock = parseInt(productQuantity) + parseInt(restockQuantity);
-      const restock = updatedRestock.toString();
-      console.log('update restock:',restock);
-      const updateQuantity = {restock};
+      const updatedProductQuantity = updatedRestock.toString();
+      console.log('update restock:',updatedProductQuantity);
+      const updateQuantity = {updatedProductQuantity};
 
       //update data
       const url = `http://localhost:5000/products/${id}`;
@@ -43,6 +43,31 @@ const Inventory = () => {
         event.target.reset();
       });
     }
+
+     //hande delivered
+     const handleDelivered = () => {
+      const quantity = parseInt(productQuantity) - 1;
+
+      const updatedProductQuantity = quantity.toString();
+      console.log('update restock:',updatedProductQuantity);
+      const updateQuantity = {updatedProductQuantity};
+
+      //update data
+      const url = `http://localhost:5000/products/${id}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(updateQuantity),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        // setProduct(product);
+        swal("Item Delivered!", "Quantity Successfully Updated!", "success");
+      });
+    }
   return (
     <div className='product-information'>
         <img src={product.img} alt="" />
@@ -52,7 +77,7 @@ const Inventory = () => {
         <small>{product.description}</small>
         <p><b>Quantity: </b>{product.quantity}</p>
         <p><b>Supplier name:</b> {product.supplierName}</p>
-        <button className='delivered-btn'>Delivered</button>
+        <button onClick={handleDelivered} className='delivered-btn'>Delivered</button>
         <button onClick={manageInventories} className='delivered-btn'>Manage Inventories <HiArrowRight/></button>
         <form onSubmit={handleUpdate}>
             <label htmlFor="restock"><b>Restock the item:</b></label>
