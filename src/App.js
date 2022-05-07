@@ -14,6 +14,7 @@ import ManageInventories from "./Pages/ManageInventory/ManageInventories/ManageI
 import MyItems from "./Pages/ManageInventory/MyItems/MyItems";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import HashLoader from "react-spinners/HashLoader";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -21,7 +22,7 @@ function App() {
     setLoading(true);
     setTimeout(()=>{
       setLoading(false);
-    },5000)
+    },4500)
   },[])
   return (
     <div>
@@ -55,6 +56,7 @@ function App() {
             <ManageInventories></ManageInventories>
           </RequireAuth>}></Route>
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+          <Route path="/aboutus" element={<AboutUs></AboutUs>}></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
         </Routes>
         <Footer></Footer>

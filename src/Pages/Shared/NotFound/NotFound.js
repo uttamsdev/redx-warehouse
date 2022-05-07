@@ -1,6 +1,7 @@
 import React from 'react';
 import './NotFound.css'
 import {FaInstagram,FaLinkedinIn,FaTwitter,FaSkype} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
@@ -14,12 +15,12 @@ const NotFound = () => {
 			</div>
 			<h1>oops!</h1>
 			<h2>Error 404 : Page Not Found</h2>
-			<a href="#">go back</a>
+			<Link to="/home">Back to home</Link>
 			<div class="notfound-social">
-				<a href="#"><FaInstagram></FaInstagram></a>
-				<a href="#"><FaLinkedinIn></FaLinkedinIn></a>
-				<a href="#"><FaTwitter></FaTwitter></a>
-				<a href="#"><FaSkype></FaSkype></a>
+				<Link to="#"><FaInstagram></FaInstagram></Link>
+				<Link to="#"><FaLinkedinIn></FaLinkedinIn></Link>
+				<Link to="#"><FaTwitter></FaTwitter></Link>
+				<Link to="#"><FaSkype></FaSkype></Link>
 			</div>
 		</div>
 	</div>
