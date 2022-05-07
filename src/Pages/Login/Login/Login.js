@@ -32,9 +32,7 @@ const Login = () => {
   if (loading || sending) {
     return <Loading></Loading>;
   }
-  if (user) {
-    //
-  }
+ 
   const handleSignIn = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -46,9 +44,11 @@ const Login = () => {
     );
     // console.log(data);
     localStorage.setItem("accessToken", data.accessToken);
-    navigate(from, { replace: true });
   };
 
+  if (user) {
+    navigate(from, { replace: true });
+  }
   //reset password
 
   const resetPassword = async (event) => {

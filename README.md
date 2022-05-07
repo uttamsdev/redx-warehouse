@@ -1,8 +1,9 @@
 # RedX Warehouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Live site Link:
-## Server side code link: 
+## [Live site Link:](https://redx-warehouse.web.app)
+Live site link: https://redx-warehouse.web.app
+## [Server side code link:](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-uttamsaha) 
+server side code link: https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-uttamsaha
 ## Short Description:
 This is a full stack project about Inventory Management system. User can perform read, update, insert and delete operation with mongoDB database. This project is built in react js but basically implementation of React router, firebase, Node , Express and MongoDB CRUD operation. 
 
