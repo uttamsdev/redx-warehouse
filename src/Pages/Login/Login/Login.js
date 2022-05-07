@@ -1,13 +1,16 @@
-import React, { useRef } from 'react';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { ToastContainer, toast } from 'react-toastify';
+import React, { useRef } from "react";
+import {
+  useSendPasswordResetEmail,
+  useSignInWithEmailAndPassword,
+} from "react-firebase-hooks/auth";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import auth from '../../../firebase.init';
-import Loading from '../../Shared/Loading/Loading';
-import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
-import './Login.css'
-import axios from 'axios';
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import auth from "../../../firebase.init";
+import Loading from "../../Shared/Loading/Loading";
+import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
+import "./Login.css";
+import axios from "axios";
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -30,16 +33,19 @@ const Login = () => {
     return <Loading></Loading>;
   }
   if (user) {
-    // 
+    //
   }
-  const handleSignIn = async(event) => {
+  const handleSignIn = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
     await signInWithEmailAndPassword(email, password);
-    const {data} = await axios.post('http://localhost:5000/login', {email});
+    const { data } = await axios.post(
+      "https://polar-lowlands-06321.herokuapp.com/login",
+      { email }
+    );
     // console.log(data);
-    localStorage.setItem('accessToken',data.accessToken);
+    localStorage.setItem("accessToken", data.accessToken);
     navigate(from, { replace: true });
   };
 
@@ -57,27 +63,49 @@ const Login = () => {
     }
   };
   return (
-    <div className='login-outer-container'>
-        <div className='login-container'>
-        <div className='login-area'>
-                <h4>LOGIN TO REDX</h4>
-                    <form onSubmit={handleSignIn} className='login-items'>
-                    <label htmlFor="username">Email</label>
-                    <input type="email" className='login' name="email" placeholder='your-email@gmail.com' required ref={emailRef}/>
-                    <label htmlFor="password">Password</label>
-                    <input type="password" className='login' name="password" placeholder="Your Password" required/>
-                    {showError}
-                    <input type="submit" className='login-btn' value="Login" />
-                    </form>
-                    <p className='p'>New to RedX? <Link className='a' to="/register">Create an Account</Link></p>
-                    <p className='p'>Forgot password? <button onClick={resetPassword} className='btn btn-link a'>Reset Password</button></p>
-                    <SocialLogin></SocialLogin>
-                    
+    <div className="login-outer-container">
+      <div className="login-container">
+        <div className="login-area">
+          <h4>LOGIN TO REDX</h4>
+          <form onSubmit={handleSignIn} className="login-items">
+            <label htmlFor="username">Email</label>
+            <input
+              type="email"
+              className="login"
+              name="email"
+              placeholder="your-email@gmail.com"
+              required
+              ref={emailRef}
+            />
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              className="login"
+              name="password"
+              placeholder="Your Password"
+              required
+            />
+            {showError}
+            <input type="submit" className="login-btn" value="Login" />
+          </form>
+          <p className="p">
+            New to RedX?{" "}
+            <Link className="a" to="/register">
+              Create an Account
+            </Link>
+          </p>
+          <p className="p">
+            Forgot password?{" "}
+            <button onClick={resetPassword} className="btn btn-link a">
+              Reset Password
+            </button>
+          </p>
+          <SocialLogin></SocialLogin>
         </div>
+      </div>
+      <ToastContainer />
     </div>
-    <ToastContainer />
-    </div>
-  )
-}
+  );
+};
 
 export default Login;
