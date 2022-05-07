@@ -29,7 +29,7 @@ function App() {
         loading ?
         <div className="loading">
           <HashLoader
-          size={120}
+          size={130}
           color={"#FF5F15"}
           loading={loading}
           />
