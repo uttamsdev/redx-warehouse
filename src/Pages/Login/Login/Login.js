@@ -7,6 +7,7 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 import './Login.css'
+import axios from 'axios';
 
 const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
@@ -29,14 +30,17 @@ const Login = () => {
     return <Loading></Loading>;
   }
   if (user) {
-    //redirecting after login
-    navigate(from, { replace: true });
+    // 
   }
-  const handleSignIn = (event) => {
+  const handleSignIn = async(event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
-    signInWithEmailAndPassword(email, password);
+    await signInWithEmailAndPassword(email, password);
+    const {data} = await axios.post('http://localhost:5000/login', {email});
+    // console.log(data);
+    localStorage.setItem('accessToken',data.accessToken);
+    navigate(from, { replace: true });
   };
 
   //reset password
